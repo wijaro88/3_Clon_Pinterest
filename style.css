@@ -104,10 +104,10 @@
     background-color: black;
     color: white;
 }
-button:checked{
+/* button:checked{ */
     /* background-color: rgb(38, 146, 146);
     color: rgb(68, 0, 255); */
-}
+/* } */
 
 .notifications:hover {
     background-color: #80808030;;
@@ -116,27 +116,36 @@ button:checked{
 
 display: flex;
 flex-direction: row;
-justify-content: flex-start;
+justify-content: center;
 align-items: flex-start;
 flex-wrap: wrap;
 }
 .prueba{
     position: absolute;
-    z-index: 5;
+    z-index: 0;
+}
+video{
+object-fit: contain;
+overflow-clip-margin: content-box;
+overflow: clip;
 }
 .card-image{
     display: inline-block;
     width: 236px;
     height: auto;
     margin: 10px;
+    z-index: 1;
 }
 .card-image:hover{
     height: fit-content;
-    z-index: 1;
+    z-index: 2;
     filter: brightness(50%);
-    border 1px solid white;
+    /* border 1px solid white; */
     }
-
+.card-image:hover .prueba{
+    position: absolute;
+    z-index: 5;
+}
 img{
     border-radius: 20px;
 }
