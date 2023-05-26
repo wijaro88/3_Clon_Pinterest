@@ -4,6 +4,8 @@
 #navbar-pinterest {
     top: 0;
     position: sticky;
+    background-color: white;
+    z-index: 8;
 }
 #pinterest-icon{
     height: 33px;
@@ -109,6 +111,7 @@
     background-color: #80808030;;
     color: #000000;}
 #content{
+
 display: flex;
 flex-direction: row;justify-content: center;align-items: flex-start;flex-wrap: wrap;
 }
@@ -120,14 +123,21 @@ flex-direction: row;justify-content: center;align-items: flex-start;flex-wrap: w
     display: inline-block;
     width: 236px;
     height: auto;
+    margin: 10px;
+    /* background-color: #000000; */
 
 }
 .card-image:hover{
-    opacity:0.5;
-    border: 5px solid black;
+    /* background: rgba(0,0,0,0.5); */
+    /* opacity:0.5; */
+    /* border: 5px solid black; */
     height: fit-content;
     z-index: 1;
-    
+    filter: brightness(50%)
+}
+img{
+    border-radius: 20px;
+    /* background-color: #000000; */
 }
 .boton2{
     background-color: red;
