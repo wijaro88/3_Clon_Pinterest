@@ -1,29 +1,34 @@
 * {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 #navbar-pinterest {
     top: 0;
     position: sticky;
     background-color: white;
     z-index: 8;
 }
-#pinterest-icon{
+
+#pinterest-icon {
     height: 33px;
 }
+
 #icons {
     display: flex;
     position: relative;
-    left: 6%;
+    left: 1%;
     align-items: center;
     justify-content: space-between;
     width: 25%;
     color: #80808030;
 }
-.notifications:hover{
+
+.notifications:hover {
     background-color: blanchedalmond;
     border-radius: 50px 50px;
 }
-.notifications{
+
+.notifications {
     position: relative;
     padding: 10px;
 }
@@ -38,6 +43,7 @@
     padding-right: 10px;
     margin: 10px;
 }
+
 .card-image {
     display: inline-block;
 }
@@ -78,17 +84,19 @@
     display: inline-flex;
     align-items: center;
     position: relative;
-    border:#80808030;
+    border: #80808030;
     background-color: #80808030;
     border-radius: 25px 25px 25px 25px;
     padding-left: 3%;
 }
-.bl{
+
+.bl {
     display: block;
 }
+
 .boton {
     background-color: white;
-    color: black;
+    /* color: black; */
     border: none;
     padding: 11px 10px;
     font-size: 22px;
@@ -97,59 +105,77 @@
 }
 
 .boton:hover {
-    background-color: #80808030;;
+    background-color: #80808030;
+    ;
     color: #000000;
 }
-.boton:active{
+
+.boton:active {
     background-color: black;
     color: white;
 }
+
 /* button:checked{ */
-    /* background-color: rgb(38, 146, 146);
+/* background-color: rgb(38, 146, 146);
     color: rgb(68, 0, 255); */
 /* } */
 
 .notifications:hover {
-    background-color: #80808030;;
-    color: #000000;}
-#content{
-
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: flex-start;
-flex-wrap: wrap;
+    background-color: #80808030;
+    ;
+    color: #000000;
 }
-.prueba{
+
+#content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.columnas{
+    display: flex;
+    flex-direction: column;
+    width: 236px;
+    margin: 10px;
+}
+
+.prueba {
     position: absolute;
     z-index: 0;
 }
-video{
-object-fit: contain;
-overflow-clip-margin: content-box;
-overflow: clip;
+
+video {
+    object-fit: contain;
+    overflow-clip-margin: content-box;
+    overflow: clip;
 }
-.card-image{
+
+.card-image {
     display: inline-block;
     width: 236px;
     height: auto;
     margin: 10px;
     z-index: 1;
 }
-.card-image:hover{
+
+.card-image:hover {
     height: fit-content;
     z-index: 2;
     filter: brightness(50%);
     /* border 1px solid white; */
-    }
-.card-image:hover .prueba{
+}
+
+.card-image:hover .prueba {
     position: absolute;
     z-index: 5;
 }
-img{
+
+img {
     border-radius: 20px;
 }
-.boton2{
+
+.boton2 {
     background-color: red;
     color: white;
     border: none;
